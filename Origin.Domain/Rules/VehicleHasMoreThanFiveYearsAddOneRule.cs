@@ -8,7 +8,7 @@ namespace Origin.Domain.Rules
     {
         public void Validate(Insurance insurance, User user)
         {
-            if (DateTime.Now.Year - user.Vehicle?.Year > 5 )
+            if (DateTime.Now.Year - user.Vehicle?.Year <= 5 )
             {
                 insurance.AddScore(1);
             }
