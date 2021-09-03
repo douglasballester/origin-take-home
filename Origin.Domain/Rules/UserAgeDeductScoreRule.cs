@@ -3,13 +3,15 @@ using Origin.Domain.Entities.PersonalInfo;
 
 namespace Origin.Domain.Rules
 {
-    public class IncomeAboveTwoHundredDeductOneRule : IRule<Insurance, User>
+    public class UserAgeDeductScoreRule : IRule<Insurance, User>
     {
-        private readonly int _twoHundredThousand = 200000;
-
         public void Validate(Insurance insurance, User user)
         {
-            if (user.Income > _twoHundredThousand)
+            if (user.Age < 30)
+            {
+                insurance.DeductScore(2);
+            } 
+            else if (user.Age >= 30 && user.Age <= 40)
             {
                 insurance.DeductScore(1);
             }

@@ -1,6 +1,6 @@
 ﻿using Origin.Domain.Enums;
 
-namespace Origin.Domain.Entities
+namespace Origin.Domain.Entities.PersonalInfo
 {
     public class House
     {

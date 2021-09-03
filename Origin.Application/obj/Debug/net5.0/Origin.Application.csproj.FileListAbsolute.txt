@@ -1,0 +1,5 @@
+C:\Personal\origin-take-home\Origin.Application\obj\Debug\net5.0\Origin.Application.csprojAssemblyReference.cache
+C:\Personal\origin-take-home\Origin.Application\obj\Debug\net5.0\Origin.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal\origin-take-home\Origin.Application\obj\Debug\net5.0\Origin.Application.AssemblyInfoInputs.cache
+C:\Personal\origin-take-home\Origin.Application\obj\Debug\net5.0\Origin.Application.AssemblyInfo.cs
+C:\Personal\origin-take-home\Origin.Application\obj\Debug\net5.0\Origin.Application.csproj.CoreCompileInputs.cache

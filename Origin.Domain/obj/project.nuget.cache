@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T/Dlcp9ZasHwAMeY2r5/n7BZZLj0IoaZ+a6nRpmWmirut3e6y4+jW1YNz93uCMrqOW9nW57f+cIfCFLjj9aQBQ==",
+  "dgSpecHash": "YNRuC27/FTUFJy5ciXUEEvq8l3xpmx6jx9S4MUR9WIRq38Qk2xApXVsAzqc5Zer7jx4AOQ3KOX4LTE/8GYK8dA==",
   "success": true,
-  "projectFilePath": "E:\\develop\\origin\\Origin\\Origin.Domain\\Origin.Domain.csproj",
+  "projectFilePath": "C:\\Personal\\origin-take-home\\Origin.Domain\\Origin.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
