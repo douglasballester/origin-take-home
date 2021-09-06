@@ -13,8 +13,8 @@ namespace Origin.Application.Mappers
                      userDto.Income,
                      (DomainEnum.MaritalStatus)userDto.MaritalStatus,
                      userDto.RiskQuestions,
-                     userDto.House.Map(),
-                     userDto.Vehicle.Map());
+                     userDto.House?.Map(),
+                     userDto.Vehicle?.Map());
 
         public static UserDto MapDto(this User user) =>
             new UserDto { 
@@ -23,8 +23,8 @@ namespace Origin.Application.Mappers
                 Income = user.Income,
                 MaritalStatus = (MaritalStatus)user.MaritalStatus,
                 RiskQuestions = user.RiskQuestions,
-                Vehicle = user.Vehicle.MapDto(),
-                House = user.House.MapDto(),
+                Vehicle = user.Vehicle?.MapDto(),
+                House = user.House?.MapDto(),
             };
     }
 }

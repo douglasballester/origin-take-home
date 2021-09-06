@@ -18,3 +18,13 @@ E:\develop\origin-take-home\Origin.Application\obj\Debug\net5.0\Origin.Applicati
 E:\develop\origin-take-home\Origin.Application\obj\Debug\net5.0\Origin.Application.dll
 E:\develop\origin-take-home\Origin.Application\obj\Debug\net5.0\ref\Origin.Application.dll
 E:\develop\origin-take-home\Origin.Application\obj\Debug\net5.0\Origin.Application.pdb
+C:\Personal\origin-take-home\Origin.Application\bin\Debug\net5.0\Origin.Application.deps.json
+C:\Personal\origin-take-home\Origin.Application\bin\Debug\net5.0\Origin.Application.dll
+C:\Personal\origin-take-home\Origin.Application\bin\Debug\net5.0\ref\Origin.Application.dll
+C:\Personal\origin-take-home\Origin.Application\bin\Debug\net5.0\Origin.Application.pdb
+C:\Personal\origin-take-home\Origin.Application\bin\Debug\net5.0\Origin.Domain.dll
+C:\Personal\origin-take-home\Origin.Application\bin\Debug\net5.0\Origin.Domain.pdb
+C:\Personal\origin-take-home\Origin.Application\obj\Debug\net5.0\Origin.Application.csproj.CopyComplete
+C:\Personal\origin-take-home\Origin.Application\obj\Debug\net5.0\Origin.Application.dll
+C:\Personal\origin-take-home\Origin.Application\obj\Debug\net5.0\ref\Origin.Application.dll
+C:\Personal\origin-take-home\Origin.Application\obj\Debug\net5.0\Origin.Application.pdb
