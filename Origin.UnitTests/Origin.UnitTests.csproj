@@ -23,8 +23,4 @@
     <ProjectReference Include="..\Origin.Domain\Origin.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Domain\Entities\Insurances\" />
-  </ItemGroup>
-
 </Project>
