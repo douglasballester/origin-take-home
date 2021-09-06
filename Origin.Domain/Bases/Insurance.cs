@@ -7,6 +7,7 @@ namespace Origin.Domain.Bases
         public abstract string Name { get; }
         public int Score { get; private set; }
         public bool Ineligible { get; private set; }
+        public string Risk => GetRiskResult();
 
         public Insurance(int score)
         {
@@ -26,6 +27,23 @@ namespace Origin.Domain.Bases
         internal void SetIneligible()
         {
             Ineligible = true;
+        }
+
+        internal virtual string GetRiskResult()
+        {
+            if (Ineligible)
+                return "ineligible";
+
+            switch (Score)
+            {
+                case <= 0:
+                    return "economic";
+                case 1:
+                case 2:
+                    return "regular";
+                case >= 3:
+                    return "responsible";
+            };                
         }
 
         public abstract void RunValidations(User user);

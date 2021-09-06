@@ -10,11 +10,12 @@ namespace Origin.Domain.Entities
     public class InsuranceRisk
     {
         public User User { get; private set; }
-        public List<Insurance> Insurances => new List<Insurance>();
+        public List<Insurance> Insurances { get; }
 
         public InsuranceRisk(User user)
         {
             User = user;
+            Insurances = new List<Insurance>();
 
             var baseScore = user.RiskQuestions.Select(Convert.ToInt32).Sum();
             BuildInsurances(baseScore);
@@ -22,7 +23,7 @@ namespace Origin.Domain.Entities
 
         public void RunInsuranceValidations()
         {
-            Insurances.ForEach(x => x.RunValidations(User));
+            Insurances.ForEach(insurance => insurance.RunValidations(User));
         }
 
         private void BuildInsurances(int baseScore)
@@ -32,6 +33,5 @@ namespace Origin.Domain.Entities
             Insurances.Add(new LifeInsurance(baseScore));
             Insurances.Add(new DisabilityInsurance(baseScore));
         }
-
     }
 }

@@ -14,10 +14,10 @@ namespace Origin.Domain.Entities.Insurances
         public override void RunValidations(User user)
         {
             RunRules.For(this, user)
-                .Add(new DoesntHaveIncomeSetIneligibleRule())
+                .Add(new DoesntHaveVehicleSetIneligibleRule())
                 .Add(new UserAgeDeductScoreRule())
                 .Add(new IncomeAboveTwoHundredDeductOneRule())
-                .Add(new VehicleHasMoreThanFiveYearsAddOneRule())
+                .Add(new VehicleWasProducedLastFiveYearsAddOneRule())
                 .Run();
         }
     }

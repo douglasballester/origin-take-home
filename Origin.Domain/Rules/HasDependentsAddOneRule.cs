@@ -9,7 +9,7 @@ namespace Origin.Domain.Rules
         {
             if (user.Dependents is not 0)
             {
-                insurance.DeductScore(1);
+                insurance.AddScore(1);
             }
         }
     }

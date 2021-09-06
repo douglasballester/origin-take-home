@@ -48,6 +48,16 @@
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         }
+      },
+      "Origin.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Origin.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Origin.Domain.dll": {}
+        }
       }
     }
   },
@@ -114,27 +124,38 @@
         "microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec"
       ]
+    },
+    "Origin.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Origin.Domain/Origin.Domain.csproj",
+      "msbuildProject": "../Origin.Domain/Origin.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "FluentValidation.AspNetCore >= 10.3.3"
+      "FluentValidation.AspNetCore >= 10.3.3",
+      "Origin.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\victor.scherer\\.nuget\\packages\\": {}
+    "C:\\Users\\victo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Personal\\origin-take-home\\Origin.Application\\Origin.Application.csproj",
+      "projectUniqueName": "E:\\develop\\origin-take-home\\Origin.Application\\Origin.Application.csproj",
       "projectName": "Origin.Application",
-      "projectPath": "C:\\Personal\\origin-take-home\\Origin.Application\\Origin.Application.csproj",
-      "packagesPath": "C:\\Users\\victor.scherer\\.nuget\\packages\\",
-      "outputPath": "C:\\Personal\\origin-take-home\\Origin.Application\\obj\\",
+      "projectPath": "E:\\develop\\origin-take-home\\Origin.Application\\Origin.Application.csproj",
+      "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
+      "outputPath": "E:\\develop\\origin-take-home\\Origin.Application\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\victor.scherer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -147,7 +168,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\develop\\origin-take-home\\Origin.Domain\\Origin.Domain.csproj": {
+              "projectPath": "E:\\develop\\origin-take-home\\Origin.Domain\\Origin.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -176,14 +201,11 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

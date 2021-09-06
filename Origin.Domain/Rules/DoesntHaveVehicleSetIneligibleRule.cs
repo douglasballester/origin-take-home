@@ -1,16 +1,15 @@
 ﻿using Origin.Domain.Bases;
 using Origin.Domain.Entities.PersonalInfo;
-using System;
 
 namespace Origin.Domain.Rules
 {
-    public class VehicleHasMoreThanFiveYearsAddOneRule : IRule<Insurance, User>
+    public class DoesntHaveVehicleSetIneligibleRule : IRule<Insurance, User>
     {
         public void Validate(Insurance insurance, User user)
         {
-            if (DateTime.Now.Year - user.Vehicle?.Year <= 5 )
+            if (user.Vehicle is null)
             {
-                insurance.AddScore(1);
+                insurance.SetIneligible();
             }
         }
     }

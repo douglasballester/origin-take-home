@@ -10,3 +10,14 @@ C:\Personal\origin-take-home\Origin.Domain\obj\Debug\net5.0\Origin.Domain.csproj
 C:\Personal\origin-take-home\Origin.Domain\obj\Debug\net5.0\Origin.Domain.dll
 C:\Personal\origin-take-home\Origin.Domain\obj\Debug\net5.0\ref\Origin.Domain.dll
 C:\Personal\origin-take-home\Origin.Domain\obj\Debug\net5.0\Origin.Domain.pdb
+E:\develop\origin-take-home\Origin.Domain\bin\Debug\net5.0\Origin.Domain.deps.json
+E:\develop\origin-take-home\Origin.Domain\bin\Debug\net5.0\Origin.Domain.dll
+E:\develop\origin-take-home\Origin.Domain\bin\Debug\net5.0\ref\Origin.Domain.dll
+E:\develop\origin-take-home\Origin.Domain\bin\Debug\net5.0\Origin.Domain.pdb
+E:\develop\origin-take-home\Origin.Domain\obj\Debug\net5.0\Origin.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\develop\origin-take-home\Origin.Domain\obj\Debug\net5.0\Origin.Domain.AssemblyInfoInputs.cache
+E:\develop\origin-take-home\Origin.Domain\obj\Debug\net5.0\Origin.Domain.AssemblyInfo.cs
+E:\develop\origin-take-home\Origin.Domain\obj\Debug\net5.0\Origin.Domain.csproj.CoreCompileInputs.cache
+E:\develop\origin-take-home\Origin.Domain\obj\Debug\net5.0\Origin.Domain.dll
+E:\develop\origin-take-home\Origin.Domain\obj\Debug\net5.0\ref\Origin.Domain.dll
+E:\develop\origin-take-home\Origin.Domain\obj\Debug\net5.0\Origin.Domain.pdb

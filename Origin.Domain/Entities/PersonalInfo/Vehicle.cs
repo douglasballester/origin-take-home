@@ -2,6 +2,11 @@
 {
     public class Vehicle
     {
-        public short Year { get; private set; }
+        public int Year { get; private set; }
+
+        public Vehicle(int year)
+        {
+            Year = year;
+        }
     }
 }

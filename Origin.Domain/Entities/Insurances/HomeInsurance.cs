@@ -14,7 +14,7 @@ namespace Origin.Domain.Entities.Insurances
         public override void RunValidations(User user)
         {
             RunRules.For(this, user)
-                .Add(new DoesntHaveIncomeSetIneligibleRule())
+                .Add(new DoesntHaveHouseSetIneligibleRule())
                 .Add(new UserAgeDeductScoreRule())
                 .Add(new IncomeAboveTwoHundredDeductOneRule())
                 .Add(new HouseMortgagedAddOneRule())
