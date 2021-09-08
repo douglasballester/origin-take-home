@@ -3,6 +3,7 @@ using Moq;
 using Origin.Application.Dtos.Enums;
 using Origin.Application.Dtos.PersonalInfo;
 using Origin.Application.Services;
+using Origin.Common.Notifications;
 using System.Collections.Generic;
 using System.Linq;
 using Xunit;
@@ -16,7 +17,8 @@ namespace Origin.UnitTests.Application.Service
         {
             //Arrange
             var mock = new Mock<ILogger<InsuranceRiskService>>();
-            var insuranceService = new InsuranceRiskService(mock.Object);
+            var notificationContext = new NotificationContext();
+            var insuranceService = new InsuranceRiskService(mock.Object, notificationContext);
 
             //Act
             var insuranceRiskDto = insuranceService.Simulate(userDto);

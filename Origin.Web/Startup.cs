@@ -6,6 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Origin.Application.Interfaces;
 using Origin.Application.Services;
+using Origin.Common.Notifications;
 
 namespace Origin.Web
 {
@@ -29,19 +30,17 @@ namespace Origin.Web
             });
 
             services.AddScoped<IInsuranceRiskService, InsuranceRiskService>();
+            services.AddScoped<NotificationContext>();
+
+            services.AddMvc(options => options.Filters.Add<NotificationFilter>());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Origin.Web v1"));
-            }
-
-            app.UseHttpsRedirection();
+            app.UseDeveloperExceptionPage();
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Origin.Web v1"));
 
             app.UseRouting();
 

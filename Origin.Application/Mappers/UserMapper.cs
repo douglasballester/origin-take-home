@@ -8,9 +8,9 @@ namespace Origin.Application.Mappers
     public static class UserMapper
     {
         public static User Map(this UserDto userDto) =>
-            new User(userDto.Age,
-                     userDto.Dependents,
-                     userDto.Income,
+            new User(userDto.Age.Value,
+                     userDto.Dependents.Value,
+                     userDto.Income.Value,
                      (DomainEnum.MaritalStatus)userDto.MaritalStatus,
                      userDto.RiskQuestions,
                      userDto.House?.Map(),

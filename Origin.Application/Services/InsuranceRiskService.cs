@@ -5,16 +5,20 @@ using Origin.Application.Validators;
 using Origin.Application.Dtos.Insurance;
 using Origin.Application.Mappers;
 using Origin.Domain.Entities;
+using Origin.Common.Notifications;
+using System.Linq;
 
 namespace Origin.Application.Services
 {
     public class InsuranceRiskService : IInsuranceRiskService
     {
         private readonly ILogger<InsuranceRiskService> _logger;
+        private readonly NotificationContext _notificationContext;
 
-        public InsuranceRiskService(ILogger<InsuranceRiskService> logger)
+        public InsuranceRiskService(ILogger<InsuranceRiskService> logger, NotificationContext notificationContext)
         {
             _logger = logger;
+            _notificationContext = notificationContext;
         }
 
         public InsuranceRiskDto Simulate(UserDto userDto)
@@ -24,7 +28,7 @@ namespace Origin.Application.Services
 
             if (!validationResult.IsValid)
             {
-                //Implement notification
+                _notificationContext.AddNotifications(validationResult.Errors.Select(x => x.ErrorMessage).ToList());
                 return null;
             }
 

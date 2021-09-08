@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Origin.Common\Origin.Common.csproj" />
     <ProjectReference Include="..\Origin.Domain\Origin.Domain.csproj" />
   </ItemGroup>
 

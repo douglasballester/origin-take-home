@@ -14,6 +14,7 @@ E:\develop\origin-take-home\Origin.Domain\bin\Debug\net5.0\Origin.Domain.deps.js
 E:\develop\origin-take-home\Origin.Domain\bin\Debug\net5.0\Origin.Domain.dll
 E:\develop\origin-take-home\Origin.Domain\bin\Debug\net5.0\ref\Origin.Domain.dll
 E:\develop\origin-take-home\Origin.Domain\bin\Debug\net5.0\Origin.Domain.pdb
+E:\develop\origin-take-home\Origin.Domain\obj\Debug\net5.0\Origin.Domain.csprojAssemblyReference.cache
 E:\develop\origin-take-home\Origin.Domain\obj\Debug\net5.0\Origin.Domain.GeneratedMSBuildEditorConfig.editorconfig
 E:\develop\origin-take-home\Origin.Domain\obj\Debug\net5.0\Origin.Domain.AssemblyInfoInputs.cache
 E:\develop\origin-take-home\Origin.Domain\obj\Debug\net5.0\Origin.Domain.AssemblyInfo.cs

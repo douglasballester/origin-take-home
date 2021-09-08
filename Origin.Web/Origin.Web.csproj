@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Origin.Application\Origin.Application.csproj" />
+    <ProjectReference Include="..\Origin.Common\Origin.Common.csproj" />
   </ItemGroup>
 
 </Project>

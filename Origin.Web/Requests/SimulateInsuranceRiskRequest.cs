@@ -6,13 +6,13 @@ namespace Origin.Web.Requests
     public class SimulateInsuranceRiskRequest
     {
         [JsonPropertyName("age")]
-        public int Age { get; set; }
+        public int? Age { get; set; }
 
         [JsonPropertyName("dependents")]
-        public int Dependents { get; set; }
+        public int? Dependents { get; set; }
 
         [JsonPropertyName("income")]
-        public double Income { get; set; }
+        public double? Income { get; set; }
 
         [JsonPropertyName("marital_status")]
         public string MaritalStatus { get; set; }

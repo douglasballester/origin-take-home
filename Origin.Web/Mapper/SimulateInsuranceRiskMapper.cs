@@ -18,8 +18,8 @@ namespace Origin.Web.Mapper
                 Income = simulateInsuranceRisk.Income,
                 RiskQuestions = simulateInsuranceRisk.RiskQuestions,
                 MaritalStatus = Enum.TryParse(simulateInsuranceRisk.MaritalStatus, ignoreCase : true, out MaritalStatus result) ? result : 0,
-                House = simulateInsuranceRisk.House.MapHouse(),
-                Vehicle = simulateInsuranceRisk.Vehicle.MapVehicle()
+                House = simulateInsuranceRisk.House?.MapHouse(),
+                Vehicle = simulateInsuranceRisk.Vehicle?.MapVehicle()
             };
 
         public static SimulateInsuranceRiskResponse MapResponse(this InsuranceRiskDto insuranceRiskDto)

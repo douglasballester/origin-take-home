@@ -9,7 +9,7 @@ using Origin.Web.Requests;
 namespace Origin.Web.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/insurance")]
     public class InsuranceController : ControllerBase
     {
         private readonly ILogger<InsuranceController> _logger;
